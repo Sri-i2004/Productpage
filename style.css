@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+.gallery{
+    flex-basis: 52%;
+    background: lavender;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(red, green, blue, 0.1);
+}
+.gallery img{
+    width: 100%;
+    display: block;
+}
+.details{
+    flex-basis: 53%;
+    background: white;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(red, green, blue, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: dimgray;
+}
+.details h1{
+    font-size: 30px;
+    color:black;
+
+}
+.details h2{
+    color:palevioletred;
+    font-size: 20px;
+    font-weight: 600;
+}
+.details h3{
+    color: lightcoral;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.size-select{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.size-select p{
+    width: 50px;
+    
+}
+.size-select input:checked+span{
+    color: cornflowerblue;
+    font-weight: 700;
+}
+.size-select input{
+    display: none;
+}
+.size-select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color-select{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.color-select p{
+    width: 75px;
+}
+.color-select span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.color-1{
+    background: hotpink;
+}
+.color-2{
+    background: blue;
+}
+.color-3{
+    background: red;
+}
+.color-4{
+    background: green;
+}
+.color-select input{
+    display: none;
+}
+.color-select input:checked+span{
+    transform: scale(0.8);
+    box-shadow: 0 0 0 1px #fff,0 0 0 3px black;
+}
+.quantity-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.quantity-select p{
+    width: 75px;
+}
+.quantity-select input{
+    background: #f6ebeb;
+    border:0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px; 
+}
+form button{
+    background: dodgerblue;
+    color: black;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border:0;
+    outline:0;
+    margin-top: 30px;
+    box-shadow:0 10px 10px rgba(85, 63, 240, 0.25) ;
+    cursor: pointer;
+}
